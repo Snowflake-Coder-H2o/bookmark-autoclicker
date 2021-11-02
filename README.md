@@ -1,2 +1,2 @@
 # bookmark-autoclicker
-name explains it
+A simple autoclicker
