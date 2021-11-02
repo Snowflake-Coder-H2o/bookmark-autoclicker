@@ -1,17 +1,17 @@
 // im kool
-var currentElement = document.body;
-var i_enabled = false
-var enableKey = "["
+var acurrentElement = document.body;
+var a_enabled = false
+var aenableKey = "["
 
 alert('AutoClicker activated! Use "[" to toggle it!\n\nChange the keybind with "\\".\n\n~ SilasDevs 2021 ~')
 
 document.addEventListener('mouseover', function (e) {
-    currentElement = e.target;
+    acurrentElement = e.target;
 });
 
 window.addEventListener('keydown', function (e) {
-    if (e.key == enableKey) {
-        i_enabled = !i_enabled
+    if (e.key == aenableKey) {
+        a_enabled = !a_enabled
 
         if (i_enabled) {
             alert("Activated auto-clicker!")
@@ -19,12 +19,12 @@ window.addEventListener('keydown', function (e) {
             alert("Disabled auto-clicker!")
         }
     } else if (e.key == "\\") {
-         enableKey = prompt("Change keybind:")[0].toLowerCase()   
+         aenableKey = prompt("Change keybind:")[0].toLowerCase()   
     }
 });
 
 setInterval(function() {
-  if (i_enabled) {
-    currentElement.click()
+  if (a_enabled) {
+    acurrentElement.click()
   }
 }, 1)
