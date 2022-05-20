@@ -44,7 +44,7 @@ function sendAlert(text, border) {
   setTimeout(function() {alert.remove()}, 3200)
 }
 
-sendAlert("🖱️ Autoclicker loaded!\n Use the [ key to enable!", "lime")
+sendAlert("🖱️ Autoclicker loaded!\n Use the q key to enable!", "lime")
 
 document.addEventListener('mouseover', function (e) {
     acurrentElement = e.target;
