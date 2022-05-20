@@ -1,7 +1,7 @@
 // im kool
 var acurrentElement = document.body;
 var a_enabled = false
-var aEnableKey = "["
+var aEnableKey = "q"
 
 var css = `
 .autoclicker-alert {
