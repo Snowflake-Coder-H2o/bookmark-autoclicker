@@ -9,10 +9,10 @@ var css = `
   position: fixed;
   top: 10px;
   left: 10px;
-  background-color: #404040;
+  background-color: #FFC0CB0;
   align-items: center;
   padding: 7px 8px 7px 5px;
-  border-left: solid red;
+  border-left: Solid Green;
   border-radius: 3px;
   opacity: 1;
   z-index: 99999999999;
