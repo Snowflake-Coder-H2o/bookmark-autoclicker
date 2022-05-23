@@ -56,7 +56,7 @@ window.addEventListener('keydown', function (e) {
     if (e.key == aEnableKey) {
         a_enabled = !a_enabled
         if (a_enabled) {
-            sendAlert("✅ Started clicking!", "Pink")
+            sendAlert("7` Started clicking!", "Pink")
             interval = setInterval(function() {
                 acurrentElement.click()
             }, 0)
