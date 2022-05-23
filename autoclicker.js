@@ -44,7 +44,7 @@ function sendAlert(text, border) {
   setTimeout(function() {alert.remove()}, 3200)
 }
 
-sendAlert("🖱️ Autoclicker loaded!\n Use the q key to enable!", "lime")
+sendAlert("🖱️ Autoclicker loaded!\n Use the q key to enable!", "Pink")
 
 document.addEventListener('mouseover', function (e) {
     acurrentElement = e.target;
@@ -56,12 +56,12 @@ window.addEventListener('keydown', function (e) {
     if (e.key == aEnableKey) {
         a_enabled = !a_enabled
         if (a_enabled) {
-            sendAlert("✅ Started clicking!", "lime")
+            sendAlert("✅ Started clicking!", "Pink")
             interval = setInterval(function() {
                 acurrentElement.click()
             }, 0)
         } else {
-            sendAlert("❌ Stopped clicking!", "red")
+            sendAlert("👑 Stopped clicking!", "Green")
             clearInterval(interval)
         }
     } else if (e.key == "\\") {
